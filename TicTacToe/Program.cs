@@ -120,7 +120,7 @@ namespace TicTacToe
                         Console.ReadKey();
                         fin = true;
                     }
-                    if (compteur == 8)
+                    if (compteur == 8 && fin!=true)
                     {
                         Console.Clear();
                         Console.WriteLine("DRAW");
@@ -143,7 +143,7 @@ namespace TicTacToe
                 void tourDuBot()
                 {
                     Random alea = new Random();
-                    int choix = alea.Next(0, 8);
+                    int choix = alea.Next(0, 9);
                     bool tourIA = false;
                     while (tourIA == false)
                     {
